@@ -8,16 +8,6 @@
         .hidden { display: none; } /* Class to hide unmatched items */
     </style>
 </head>
-<body>
-    <h2>Search Example</h2>
-    <input type="text" id="searchInput" placeholder="Type to search...">
-    <div id="content">
-        <p>Apple pie is delicious.</p>
-        <p>Bananas are yellow and sweet.</p>
-        <p>Cherries grow on trees.</p>
-        <p>Dates are sticky and brown.</p>
-    </div>
-
     <script>
         $(document).ready(function() {
             // Listen for input changes in the search field
@@ -42,5 +32,17 @@
             });
         });
     </script>
+
+<body>
+    <h2>Search Example</h2>
+    <input type="text" id="searchInput" placeholder="Type to search...">
+    <div id="content">
+        <p>Apple pie is delicious.</p>
+        <p>Bananas are yellow and sweet.</p>
+        <p>Cherries grow on trees.</p>
+        <p>Dates are sticky and brown.</p>
+    </div>
+
+    
 </body>
 </html>
