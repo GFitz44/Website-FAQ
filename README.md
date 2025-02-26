@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple jQuery Search</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
         .hidden { display: none; } /* Class to hide unmatched items */
       .content { border: black; }
@@ -19,7 +19,7 @@
         <p>Cherries grow on trees.</p>
         <p>Dates are sticky and brown.</p>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
      
