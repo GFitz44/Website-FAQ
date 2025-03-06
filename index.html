@@ -9,10 +9,20 @@
         .hidden { display: none; } /* Class to hide unmatched items */
         .h22 {font-family: 'Nova Flat';
              font-size: 34px; }
+         .SEARCH-CONTAINER {font-family: 'Nova Flat';
+             font-size: 12px;
+                           position: fixed; 
+                           margin-left: 100px;
+                           Height: 200px;
+                           width: 300px;
+                           border-style: solid;
+                           border-color: coral;}
     </style>
 </head>
 <body>
     <div class="h22"><u><b>Frequently Asked Member Questions</b></u></div>
+    <br>
+   <DIV class=SEARCH-CONTAINTER>
     <input type="text" id="searchInput" placeholder="Type to search...">
     <div id="content">
         <p><b>Q1.</b> What is a premium?</p>
@@ -26,7 +36,7 @@
         <p><b>Q9.</b>What are some key differences between a PPO and HMO plan?</p>
          <p><b>Q10.</b>What are the key chracteristics of a HDHP, or High Dedcutable Health Plan?</p>
     </div>
-
+   </div>
     <script>
         $(document).ready(function() {
             // Listen for input changes in the search field
