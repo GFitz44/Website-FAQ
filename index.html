@@ -72,8 +72,10 @@ background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/Declarat
 
 .Text-Box-Inner1 { .Height: 100%; 
         Width: 560px; 
+                  Height: 400px; 
         background-color: rgba(255,255,255,0.7);
-                  Margin-left: 15px; 
+                  Margin-left: 25px; 
+                         overflow-y: scroll;
                  }
 
         
@@ -204,7 +206,7 @@ background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/Declarat
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
-    $('.Main-Text-Box').animate({
+    $('.Text-Box-Inner1').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 50 }, 500);
 });            
  
