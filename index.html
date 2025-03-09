@@ -204,7 +204,7 @@ background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/Declarat
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
-    $('html, .Main-Text-Box').animate({
+    $('.Main-Text-Box').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 0
     }, 500);
 });            
