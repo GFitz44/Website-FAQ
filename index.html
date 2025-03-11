@@ -52,7 +52,7 @@ body{
             display: none; 
             }
 
-        #searchInput {
+        #searchInput, #searchinput2 {
             width: 280px;
         }
         
@@ -188,8 +188,8 @@ a.HDHP-Anchor {
 
 
   <DIV class="SEARCH-CONTAINER-PREZZY">
-    <input type="text" id="searchInput" placeholder="Type Organize/Search Facts by President Names">
-    <div id="content">
+    <input type="text" id="searchInput2" placeholder="Type Organize/Search Facts by President Names">
+    <div id="content2">
         <p><b>Q1.</b><a href="#FirstPresident">Who was the First President of the United States?</a></p>
         <p><b>Q2.</b><a href="#GwHometown">Where is George Washington's Hometown?</a></p>
         <p><b>Q3.</b><a href="#TallestPresident">Who was the tallest president?</a></p>
@@ -310,6 +310,35 @@ a.HDHP-Anchor {
                     }
                 });
             });
+
+// Listen for input changes in the search field
+      $("#searchInput2").on("keyup", function() {
+                // Get the search term, convert to lowercase for case-insensitive matching
+                var searchTerm = $(this).val().toLowerCase();
+
+                // Loop through each item in the content area
+                $("#content2 p").each(function() {
+                    // Get the text of the current item, also lowercase
+                    var itemText = $(this).text().toLowerCase();
+
+                    // Check if the search term is in the item's text
+                    if (itemText.indexOf(searchTerm) === -1) {
+                        // If no match, hide the item
+                        $(this).addClass("hidden");
+                    } else {
+                        // If match, show the item by removing the hidden class
+                        $(this).removeClass("hidden");
+                    }
+                });
+            });
+
+
+
+
+
+
+
+            
 
 $(".FAQ-BUTTON").click(function(){
   $(".SEARCH-CONTAINER-PREZZY").hide();
