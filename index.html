@@ -98,6 +98,16 @@ body{
     
             }
 
+
+        .Select-Instruction 
+            { height: 350px;
+               width: 300px; 
+background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/SELECT%20IMAGE.png?raw=true");
+                top: 0; 
+             right: 0; 
+               margin-top: 50px; 
+               Margin-left: 10px; 
+            }
         
         .SEARCH-CONTAINER-FAQ 
             {font-family: Nova Flat;
@@ -176,6 +186,7 @@ a.HDHP-Anchor {
    <DIV class="SEARCH-CONTAINER">
        <DIV class="FAQ-BUTTON">Click to Search for Common FAQs</DIV>
        <DIV class="PREZZY-BUTTON">Click to Search Facts by President Names</DIV>
+       <DIV class="Select-Instruction"></DIV>
        <DIV class="SEARCH-CONTAINER-FAQ">
     <input type="text" id="searchInput" placeholder="Type to Organize/Search Presidential FAQ's">
     <div id="content">
@@ -350,7 +361,7 @@ a.HDHP-Anchor {
             
 
 $(".FAQ-BUTTON").click(function(){
-  $(".SEARCH-CONTAINER-PREZZY").hide();
+  $(".SEARCH-CONTAINER-PREZZY, .Select-Instruction").hide();
 });
 
 $(".FAQ-BUTTON").click(function(){
@@ -358,7 +369,7 @@ $(".FAQ-BUTTON").click(function(){
 });
 
  $(".PREZZY-BUTTON").click(function(){
-  $(".SEARCH-CONTAINER-FAQ").hide();
+  $(".SEARCH-CONTAINER-FAQ, .Select-Instruction").hide();
 });
 
 $(".PREZZY-BUTTON").click(function(){
