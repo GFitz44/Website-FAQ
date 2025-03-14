@@ -468,7 +468,10 @@ a.HDHP-Anchor {
 
     
     <script>
-        $(document).ready(function() {
+        $(document).ready(function() { 
+            
+            let clickState = 0; // Initialize the variable to 0
+
             // Listen for input changes in the search field
             $("#searchInput").on("keyup", function() {
                 // Get the search term, convert to lowercase for case-insensitive matching
