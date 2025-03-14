@@ -86,7 +86,7 @@ body{
     background-image: url('https://github.com/GFitz44/Website-FAQ/blob/main/Common-FAQ-BUTTON-Hover2.png?raw=true');}
         
 
-        .PREZZY-BUTTON
+        .PREZZYBUTTON
             {font-family: Nova Flat;
              font-size: 8px;
                  position: fixed; 
@@ -103,7 +103,7 @@ body{
         background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/Prezzy-Name-Normal2.png?raw=true");
             }
 
-.PREZZY-BUTTON:hover {
+.PREZZYBUTTON:hover {
     background-image: url('https://github.com/GFitz44/Website-FAQ/blob/main/Prezzy-Name-Hover2.png?raw=true');}
 
         
@@ -238,7 +238,7 @@ a.HDHP-Anchor {
     <br>
    <DIV class="SEARCH-CONTAINER">
        <DIV class="FAQ-BUTTON"></DIV>
-       <DIV class="PREZZY-BUTTON"></DIV>
+       <DIV class="PREZZYBUTTON"></DIV>
        <DIV class="Select-Instruction"></DIV>
        <DIV class="SEARCH-CONTAINER-FAQ">
     <input type="text" id="searchInput" placeholder="Type to Organize/Search Presidential FAQ's">
@@ -527,11 +527,11 @@ $(".FAQ-BUTTON").click(function(){
   $(".SEARCH-CONTAINER-FAQ").show();
 });
 
- $(".PREZZY-BUTTON").click(function(){
+ $(".PREZZYBUTTON").click(function(){
   $(".SEARCH-CONTAINER-FAQ, .Select-Instruction").hide();
 });
 
-$(".PREZZY-BUTTON").click(function(){
+$(".PREZZYBUTTON").click(function(){
   $(".SEARCH-CONTAINER-PREZZY").show();
 });
             
@@ -543,7 +543,7 @@ $(".PREZZY-BUTTON").click(function(){
 
 
 
-var card = document.querySelector('.PREZZY-BUTTON');
+var PREZZYBUTTON = document.querySelector('.PREZZYBUTTON');
 card.addEventListener( 'click', function() {
   card.classList.toggle('is-flipped');
 });
