@@ -211,6 +211,7 @@ background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/Declarat
         margin-top: 25px; 
         margin-left: 400px;
             scroll-behavior: smooth !important;
+              display: none; 
     } 
 
 
@@ -525,9 +526,7 @@ $(".FAQ-BUTTON").click(function(){
   $(".SEARCH-CONTAINER-PREZZY, .Select-Instruction").hide();
 });
 
-$(".FAQ-BUTTON").click(function(){
-  $(".SEARCH-CONTAINER-FAQ").show();
-});
+
 
  $(".PREZZYBUTTON").click(function(){
   $(".SEARCH-CONTAINER-FAQ, .Select-Instruction").hide();
@@ -548,7 +547,11 @@ $(".PREZZYBUTTON").click(function(){
         myVariable = 1; // Change the variable's value to 1
       });
 
-
+ $('.FAQ-BUTTON').click(function() {
+    if (myVariable === 1) {
+      $('.SEARCH-CONTAINER-FAQ').show();
+    }
+  });
             
 
 var card = document.querySelector('.card');
