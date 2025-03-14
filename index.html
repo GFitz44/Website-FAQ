@@ -469,14 +469,7 @@ a.HDHP-Anchor {
     
     <script>
         $(document).ready(function() { 
-            var myVariable = "Hello";
-            let clickState = 0; // Initialize the variable to 0
-
-  $(".FAQ-BUTTON").click(function() {
-    clickState = 1 - clickState; // Toggle between 0 and 1
-    console.log("Current state:", clickState);
-
-
+           var myVariable; // Declare the variable
 
             // Listen for input changes in the search field
             $("#searchInput").on("keyup", function() {
