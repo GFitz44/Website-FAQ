@@ -118,52 +118,6 @@ background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/SELECT%2
                Margin-left: 10px; 
             }
 
-  .scene {
-  width: 150px;
-  height: 100px;
-  border: 1px solid #CCC;
-  perspective: 600px;
-        overflow-y: scroll;
-       font-size: 12px;
-      margin-top: 100px; 
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-       font-size: 12px;
-}
-
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
-
-.card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-align: left;
-  font-size: 12px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card__face--front {
-  background: red;
-}
-
-.card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
-}
-
-        
-        
         .SEARCH-CONTAINER-FAQ 
             {font-family: Nova Flat;
              font-size: 12px;
@@ -378,82 +332,6 @@ background-image: url("https://github.com/GFitz44/Website-FAQ/blob/main/Declarat
 
     
 
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front">
-
-
-  <h2 id="FirstPresident"></h2>
-        <p><b>Q1. Who was the first president of the United States?</b>
-            <br><b>A1:</b>The First President was George Washington. He was elected on April 6, 1789. While he was the only president ever elected unanamously as the President, he was highly reluctant to take the job.</p>
-            <br>
-       <h2 id="GwHometown"></h2>
-            <p><b>Q2. Where was George Washington's Hometown?</b>
-              <br><b>A2:</b>George Washington's hometown was Popes Creek in Westmoreland County, Virginia. He was born there on February 22, 1732.</p>
-           <br>
-        <h2 id="TallestPresident"></h2>
-            <p><b>Q3. Who was the tallest President?</b><br>
-              <b>A3:</b>Abraham Lincoln was the tallest president and he was 6 feet 4 inches tall.</p>
-            <br>
-        <h2 id="ShortestPresident"></h2>
-            <p><b>Q4. Who was the shortest President?</b><br>
-              <b>A4:</b>James Madison was the shortest president and he was 5 feet 4 inches tall, or short, depending on how you look at it.</p>
-            <br>
-             <h2 id="WHPresident"></h2>
-            <p><b>Q5. Which President first gave the White House its name?</b><br>
-              <b>A5:</b>Theordore Roosevelt was the first president to call the White House, the White House. Before Teddy Roosevelt gave it the name "White House" it was called the President's Palace, the President's House, and/or the Executive Mansion.</p>
-            <br>
-             <h2 id="AEROPresident"></h2>
-            <p><b>Q6. Who was the first president to fly in an airplane?</b><br>
-              <b>A6:</b>Franklin Delano Roosevelt was the first president to fly in an airplane.</p>
-            <br>
-             <h2 id="LHPresident"></h2>
-            <p><b>Q7. Who was the first left-handed President?</b><br>
-              <b>A7:</b>James Garfield, the 20th President was the nation's first left-handed president.</p>
-            <br>
-               <h2 id="LBSPresident"></h2>
-            <p><b>Q8. Which president never weighed more that 100 pounds?</b><br>
-              <b>A8:</b>James Madison was the only president who never weighed more that 100lbs.</p>
-            <br>
-               <h2 id="LBS-Up-President"></h2>
-            <p><b>Q9. Which president weighed the most?</b><br>
-              <b>A9:</b>William Howard Taft weighed over 300lbs and was the heaviest president to ever be elected.</p>
-            <br>
-           <h2 id="COINPresident"></h2>
-            <p><b>Q10. Who was the first president to be featured on a coin?</b><br>
-              <b>A10:</b>Abraham Lincoln was the first president to be pictured on a coin.</p>
-            <br>
-            <h2 id="FACONPresident"></h2>
-            <p><b>Q11. Who is considered the Father of the Constitution?</b><br>
-              <b>A11:</b>James Madison, the 4th President of the United States is considered to be the Father of the Constitution.</p>
-            <br>
-  <a class="HDHP-Anchor" id="HDHP"></a>
-            <p><b>Q12. Who served the shortest time as president?</b><br>
-              <b>A12:</b>The president who served the shortest time in office was President William Henry Harrison who died just 31 days after his inauguration in 1841.</p>
-            <br>
-
-
-
-
-
-        
-    </div>
-    <div class="card__face card__face--back">back
-    <br>
-<br>
-        <BR>
-        FUN FACT 2
-
-        <br><br>
-        FUN FACT 3
-    </div>
-  </div>
-</div>
-<p>Click card to flip.</p>
-
-
-
-
 
 
 
@@ -549,10 +427,6 @@ $(".PREZZYBUTTON").click(function(){
   });
             
 
-var card = document.querySelector('.card');
-card.addEventListener( 'click', function() {
-  card.classList.toggle('is-flipped');
-});
 
 
 
